@@ -1,0 +1,43 @@
+.headerContainer {
+    background-image: url('../assets/header_image.png');
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContentDiv1 {
+    background: #ffffff;
+    opacity: 0.3;
+    border-radius: 10px;
+    width: 1272px;
+    height: 462px;
+}
+
+.headerContentDiv2 {
+    border: 3px solid #292323;
+    border-radius: 5px;
+    width: 1230px;
+    height: 425px;
+    opacity: 0.75;
+    margin: 18px 20px;
+    text-align:center;
+
+}
+
+.text1 {
+    font-family: 'Alike';
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 157px;
+    font-size: 50px;
+    line-height: 63px;
+    color:white;
+}
+
+.text2 {
+    font-family: 'Alike';
+    font-size: 40px;
+    line-height: 50px;
+    color: #FBFBFB;
+}

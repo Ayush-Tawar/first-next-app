@@ -1,0 +1,23 @@
+.superContainer{
+    width: 333px;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.imageContainer{
+    width: inherit;
+    height: 450px;
+    background-image: url('../assets/event_card_image.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.dateContainer{
+    width: inherit;
+    height: 37px;
+    background: #270F33;
+}
+
+.detailsContainer{
+    background-color: rgb(255, 255, 255);
+    height: 342px;
+    border: 2px solid gray;
+}

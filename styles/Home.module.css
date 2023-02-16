@@ -1,0 +1,11 @@
+.main{
+  width: 1440px;
+  height:100vh;
+}
+.superContainer{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(236, 203, 203);
+
+}
