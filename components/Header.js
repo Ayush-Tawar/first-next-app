@@ -6,7 +6,7 @@ import HeaderImage from '../assets/header_image.png'
 function Header() {
   return (
     <>
-    <Navbar/>
+    
     <div className={styles.headerContainer}>
       <div className={styles.headerContentDiv1}>
         <div className={styles.headerContentDiv2}>

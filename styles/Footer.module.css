@@ -1,0 +1,96 @@
+.superContainer {
+    height: 451px;
+    background: #270F33;
+    color: white;
+}
+
+.mainContainer {
+    margin: 50px 85px;
+}
+
+.footerNavigationBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 32px;
+    gap: 260px;
+}
+
+.footerPages {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.footerSecondSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 55px;
+}
+
+.footerOtherDetails {
+    width: 730px;
+    height: 200px;
+    border: 1px solid #FBD07A;
+    border-radius: 8px;
+}
+.eventUpdateInput{
+    margin: 49px 0 22px 94px;
+}
+
+.contactUsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.privacyDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.inputBar {
+    display: flex;
+    width: 540px;
+    height: 75px;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0px 0 0px 94px;
+}
+
+.inputField {
+    all: unset;
+    padding-left: 20px;
+    color: black;
+}
+
+.submitButton {
+    all: unset;
+    color: black;
+    background-color: #FBD07A;
+    height: 45px;
+    width: 104px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 200px;
+}
+.lastSection{
+    display: flex;
+    margin: 27px 0 0 0;
+    flex-direction: row;
+    width: inherit;
+    justify-content: end;
+    /* align-self: flex-end; */
+}

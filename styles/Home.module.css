@@ -6,6 +6,6 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: rgb(236, 203, 203);
-
+  flex-direction: column;
+  background-color:black;
 }

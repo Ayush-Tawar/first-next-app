@@ -1,23 +1,107 @@
-.superContainer{
+.superContainer {
     width: 333px;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
+
 }
-.imageContainer{
+
+.imageContainer {
     width: inherit;
     height: 450px;
-    background-image: url('../assets/event_card_image.png') ;
+    background-color: antiquewhite;
+    position: relative;
+    /* background-image: url('../assets/event_card_image.png') ;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
 }
-.dateContainer{
+
+.dateContainer {
     width: inherit;
     height: 37px;
     background: #270F33;
 }
 
-.detailsContainer{
+.detailsContainer {
     background-color: rgb(255, 255, 255);
-    height: 342px;
-    border: 2px solid gray;
+    height: 170px;
+    border: 1px solid #D2D0D0;
+    border-radius: 0 0px 10px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.cardButton {
+    padding-top: 10px;
+}
+
+.cardButton>button {
+    width: 291px;
+    height: 37px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cardSoldOutButton {
+    all: unset;
+    background: #FBD07A;
+    color: black;
+}
+
+.cardCancelledButton {
+    all: unset;
+    background: #DC1C1C;
+    color: white;
+}
+
+.cardTicketContent,
+.cardTimeContent,
+.cardAgeContent {
+    font-size: 12px;
+}
+
+.cardPrivateButton {
+    all: unset;
+    background: #270F33;
+    color: white;
+}
+
+.dateContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.eventStatusBanner {
+    width: 95%;
+    position: absolute;
+    height: 90px;
+    background-color: white;
+    border-radius: 6px;
+    left: 5.58%;
+    top: 55.16%;
+    transform: rotate(-25.37deg);
+}
+
+.bannerImage {
+    transform: rotate(25deg);
+    position: absolute;
+    left: 4.26%;
+    top: -53%;
+}
+
+.ageTimeDivContainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 291px;
+    justify-content: space-between;
+}
+.ticketIcon{
+    transform: rotate(-45deg);
 }
