@@ -15,10 +15,10 @@ function MainContent() {
 
             <div className={styles.headingContainer}>
                 <div className={styles.headingContainerContent}>
-                    <h1>What's On At Glasgow's Coolest Event Space.</h1>
+                    <div className={styles.heading}>What's On At Glasgow's Coolest Event Space.</div>
                 </div>
-                <div>
-                    <button className={styles.viewAllButton}>view all </button> <TfiArrowRight />
+                <div className={styles.viewAllSection}>
+                    <div className={styles.viewAllButton}>view all </div> <TfiArrowRight />
                 </div>
             </div>
             <div className={styles.cardContainer}>
@@ -37,9 +37,9 @@ function MainContent() {
                     )
                 })}
             </div>
-            <div onClick={renderMoreEventCards} className={styles.moreEvents}>
+            <button onClick={renderMoreEventCards} className={styles.moreEvents}>
                 More Events
-            </div>
+            </button>
         </div>
     )
 }

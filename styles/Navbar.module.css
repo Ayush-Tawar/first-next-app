@@ -10,19 +10,24 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
-
-
-.navSearchInputBar{
-    background: none;
+.navSearchBar{
     width: 435px;
     height: 34px;
     border-radius: 22px;
     border: 1px solid #C8C7C7;
-    padding-left: 46px;
-    color: white;
 }
+.navSearchInputBar{
+    all: unset;
+    position: absolute;
+    width: 300px;
+    margin: 10px;
+    color: white;
 
+}
+.searchIcon{
+    color: white;
+    margin: 10px;
+}
 .navPages {
     display: flex;
     flex-direction: row;
@@ -31,11 +36,37 @@
     height: 16px;
     color: white;
 }
-
+.navPages:hover{
+    cursor: pointer;
+}
+.mobileSearchContainer{
+    display: none;
+}
 .navSearchInputBar ::placeholder{
     color: white;
     text-emphasis-color: white;
 } 
 .linkComponent{
     all: unset;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px){
+     .navSearchBar{
+        display: none;
+     }
+     .navPages{
+        display: none;
+     }
+     .mobileSearchContainer{
+        display: flex;
+        gap: 10px;
+        color: white;
+        align-items: center;
+     }
+     .navContainer{
+        width: 100vw;
+        gap: 10px;
+        justify-content: space-around;
+        padding: 0px 20px;
+     }
 }

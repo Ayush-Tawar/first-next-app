@@ -4,8 +4,8 @@ import { FaTicketAlt } from "react-icons/fa"
 import { AiFillCalendar } from "react-icons/ai"
 import { BsFillPersonFill } from "react-icons/bs"
 import { MdWatchLater } from "react-icons/md"
-import SoldOutBanner from '@/assets/soldOurBanner.png'
-import CancelledBanner from '@/assets/cancelledBanner.png'
+import SoldOutBanner from '@/assets/soldoutNewBanner.png'
+import CancelledBanner from '@/assets/cancelledNewBanner.png'
 import Image from 'next/image'
 function EventCard({ cardImage, eventDate, eventStatus, subHeading, mainHeading, ticketPrice, age, isSoldOut }) {
   return (
@@ -24,7 +24,7 @@ function EventCard({ cardImage, eventDate, eventStatus, subHeading, mainHeading,
             src={CancelledBanner}/>  : <></>}
           </div>
         ) : <></>}
-        <Image src={cardImage}/>
+        <Image className={styles.cardImage} src={cardImage}/>
       </div>
       <div className={styles.dateContainer}> <AiFillCalendar /> {eventDate}</div>
       <div className={styles.detailsContainer}>

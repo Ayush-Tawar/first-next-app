@@ -4,6 +4,8 @@ import Logo from '../assets/logo-navbar.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineSearch } from 'react-icons/ai'
+import {FiSearch} from 'react-icons/fi'
+import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
   return (
     <div className={styles.navContainer}>
@@ -17,13 +19,13 @@ function Navbar() {
         />
       </div>
       <div className={styles.navSearchBar}>
-        <Link href="/">
-        <AiOutlineSearch />
-        </Link>
+          <AiOutlineSearch className={styles.searchIcon}/>
         <input name='navSearchBar' placeholder='Search' className={styles.navSearchInputBar} />
       </div>
       <div className={styles.navPages}>
-        <div>Home</div>
+        <Link className={styles.linkComponent} href="/">
+          <div>Home</div>
+        </Link>
         <div>What's on</div>
         <div>Book Venue</div>
         <div>Menu</div>
@@ -32,6 +34,10 @@ function Navbar() {
         </Link>
         <div>About us</div>
         <div>Contact us</div>
+      </div>
+      <div className={styles.mobileSearchContainer}>
+        <div className={styles.searchIcon}><FiSearch/></div>
+        <div className={styles.hamburgerMenu}> <GiHamburgerMenu/> </div>
       </div>
     </div>
   )

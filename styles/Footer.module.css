@@ -3,6 +3,77 @@
     background: #270F33;
     color: white;
 }
+.mobileMainContainer{
+    display: none;
+    background-color: #270F33;
+    max-width: 400px;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.emailContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FBD07A;
+    border-radius: 8px;
+    height: 100px;
+   margin-bottom: 35px;
+}
+.aligningContainer{
+    width: 84%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+.inputBarMobile{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-around;
+    height: 33px;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+.socialLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 25px 0;
+}
+.cc18Candlerings{
+    margin-left: 213px;
+    font-size: 10px;
+}
+.submitButtonMobile{
+    all: unset;
+    color: black;
+    font-size: 9px;
+    background-color: #FBD07A;
+    height: 20px;
+    width: 45px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.inputFieldMobile {
+    all: unset;
+    padding-left: 20px;
+    width: 60%;
+    color: black;
+}
 
 .mainContainer {
     margin: 50px 85px;
@@ -26,6 +97,8 @@
     gap: 51px;
 }
 
+
+
 .socialIcons {
     display: flex;
     gap: 20px;
@@ -44,7 +117,8 @@
     border: 1px solid #FBD07A;
     border-radius: 8px;
 }
-.eventUpdateInput{
+
+.eventUpdateInput {
     margin: 49px 0 22px 94px;
 }
 
@@ -86,11 +160,25 @@
     border-radius: 8px;
     margin-left: 200px;
 }
-.lastSection{
+
+.lastSection {
     display: flex;
     margin: 27px 0 0 0;
     flex-direction: row;
     width: inherit;
     justify-content: end;
     /* align-self: flex-end; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .mobileMainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainContainer{
+        display: none;
+    }
+    .superContainer{
+        width: 100%;
+    }
 }

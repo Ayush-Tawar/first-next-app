@@ -16,13 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.superContainer}>
-        <main className={styles.main}>
-        <Navbar/>
+        <div className={styles.main}>
           <Header />
           <MainContent />
-          <Footer/>
-        </main>
-
+          <Footer />
+        </div>
       </div>
     </>
   )

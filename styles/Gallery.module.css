@@ -25,8 +25,14 @@
 }
 
 .fourContainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    background-color: aquamarine;
+    display: flex;
+/*     
+    width: 700px;
+    height: 700px; */
+    /* display: grid;
+    grid-template-columns: repeat(1fr, 1fr); */
+    /* grid-template-rows: repeat( 1fr); */
 }
 
 /* .mainContainer Image:first-child {
@@ -40,3 +46,6 @@
 .galleryContainer {
     border: 2px solid black;
 } */
+.galleryContainer {
+    
+} 
