@@ -3,7 +3,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 1",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -16,7 +16,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 2",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -29,7 +29,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 3",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -42,7 +42,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 4",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -55,7 +55,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 5",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -69,7 +69,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 6",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -82,7 +82,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 7",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -95,7 +95,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 8",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -108,7 +108,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 9",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",
@@ -121,7 +121,7 @@ export const EventCardList = [
     {
         date:"10th December 2022",
         image: CardImage,
-        main_heading:"Sample main heading",
+        main_heading:"Test 10",
         subHeading:"Sample sub heading",
         ticketPrice: "$15",
         age:"All Ages",

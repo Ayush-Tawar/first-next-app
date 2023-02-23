@@ -3,10 +3,16 @@ import styles from '@/styles/Navbar.module.css'
 import Logo from '../assets/logo-navbar.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import {FiSearch} from 'react-icons/fi'
 import {GiHamburgerMenu} from 'react-icons/gi'
-function Navbar() {
+function Navbar({query, setQuery}) {
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setQuery(e.target.value);
+  };
   return (
     <div className={styles.navContainer}>
       <div className={styles.navLogo}>
@@ -20,17 +26,17 @@ function Navbar() {
       </div>
       <div className={styles.navSearchBar}>
           <AiOutlineSearch className={styles.searchIcon}/>
-        <input name='navSearchBar' placeholder='Search' className={styles.navSearchInputBar} />
+        <input onChange={handleSearch} name='navSearchBar' value={query} placeholder='Search' type="search" className={styles.navSearchInputBar} />
       </div>
       <div className={styles.navPages}>
         <Link className={styles.linkComponent} href="/">
-          <div>Home</div>
+          Home
         </Link>
         <div>What's on</div>
         <div>Book Venue</div>
         <div>Menu</div>
         <Link className={styles.linkComponent} href="/gallery">
-          <div>Gallery</div>
+          Gallery
         </Link>
         <div>About us</div>
         <div>Contact us</div>

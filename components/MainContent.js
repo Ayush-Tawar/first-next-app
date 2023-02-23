@@ -6,7 +6,6 @@ import { useState } from 'react'
 import { TfiArrowRight } from "react-icons/tfi"
 function MainContent() {
     const [eventCardList, setEventCardlist] = useState(6)
-
     function renderMoreEventCards(){
         setEventCardlist(eventCardList + 6)
     }

@@ -1,5 +1,9 @@
 .superContainer {
     display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    margin-left: 30px;
 }
 
 .imageComponent {
@@ -13,39 +17,38 @@
 }
 
 .mainContainer {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
-    border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    gap: 20px;
+    justify-content: center;
+    width: 1400px;
     height: 1100px;
 }
 
 .fourContainer{
     background-color: aquamarine;
     display: flex;
-/*     
-    width: 700px;
-    height: 700px; */
-    /* display: grid;
-    grid-template-columns: repeat(1fr, 1fr); */
-    /* grid-template-rows: repeat( 1fr); */
 }
 
-/* .mainContainer Image:first-child {
-    grid-row-start: 1;
-}
+.topNavigationBar{
+    width: inherit;
+    height: 67px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 106px;
+    margin-bottom: 50px;
 
-.mainContainer Image:nth-child(n) {
-    grid-row-start: 1;
 }
-
-.galleryContainer {
-    border: 2px solid black;
-} */
-.galleryContainer {
-    
-} 
+.navigationOption{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.borderLine{
+    width: inherit;
+   border: 1px solid lightgrey;
+   margin-bottom: 30px;
+}

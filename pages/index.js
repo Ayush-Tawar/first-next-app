@@ -1,12 +1,20 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import MainContent from '@/components/MainContent'
 import Header from '@/components/Header'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import EventCard from '@/components/EventCard'
+import Navbar from '@/components/Navbar'
+import { EventCardList } from '@/utils/EventCardList'
+import { useState } from 'react'
+import { TfiArrowRight } from "react-icons/tfi"
 
 export default function Home() {
+  const [eventCardList, setEventCardlist] = useState(6)
+  const [query, setQuery] = useState("")
+  const [events, setEvents] = useState(EventCardList)
+  function renderMoreEventCards() {
+    setEventCardlist(eventCardList + 6)
+  }
   return (
     <>
       <Head>
@@ -15,12 +23,50 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.superContainer}>
-        <div className={styles.main}>
+      <Navbar query={query} setQuery={setQuery}/>
+      <div className={styles.main}>
+        <div className={styles.superContainer}>
           <Header />
-          <MainContent />
-          <Footer />
+
+          <div className={styles.headingContainer}>
+            <div className={styles.headingContainerContent}>
+              <div className={styles.heading}>What's On At Glasgow's Coolest Event Space.</div>
+            </div>
+            <div className={styles.viewAllSection}>
+              <div className={styles.viewAllButton}>view all </div> <TfiArrowRight />
+            </div>
+          </div>
+          <div className={styles.cardContainer}>
+            {events && events.length ? events.filter((item) =>{
+               if (query === "") {
+                return item;
+              } else if (
+                item.main_heading
+                  .toLowerCase()
+                  .includes(query.toLowerCase())
+              ) {
+                return item;
+              }
+            }).slice(0, eventCardList).map((item) => {
+              return (
+                <EventCard
+                  cardImage={item.image}
+                  eventDate={item.date}
+                  subHeading={item.subHeading}
+                  mainHeading={item.main_heading}
+                  ticketPrice={item.ticketPrice}
+                  age={item.age}
+                  eventStatus={item.eventStatus}
+                  isSoldOut={item.isSoldOut}
+                />
+              )
+            }): <div>Data not available</div>}
+          </div>
+          <button onClick={renderMoreEventCards} className={styles.moreEvents}>
+            More Events
+          </button>
         </div>
+        <Footer />
       </div>
     </>
   )

@@ -16,15 +16,17 @@ function EventCard({ cardImage, eventDate, eventStatus, subHeading, mainHeading,
           <div className={styles.eventStatusBanner}>
             {eventStatus.isSoldOut ? 
             <Image
+            alt='Banner Image'
             className={styles.bannerImage}
             src={SoldOutBanner}/> 
             : eventStatus.isCancelled ?  
             <Image
+            alt="Banner Image"
             className={styles.bannerImage}
             src={CancelledBanner}/>  : <></>}
           </div>
         ) : <></>}
-        <Image className={styles.cardImage} src={cardImage}/>
+        <Image im className={styles.cardImage} src={cardImage}/>
       </div>
       <div className={styles.dateContainer}> <AiFillCalendar /> {eventDate}</div>
       <div className={styles.detailsContainer}>
