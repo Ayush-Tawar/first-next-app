@@ -1,0 +1,27 @@
+
+.image_grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .large_image {
+  }
+  
+  .small_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 400px) {
+    .image{
+        height: 100px;
+        width: 100px;
+    }
+  }
