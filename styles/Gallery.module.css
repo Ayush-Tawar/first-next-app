@@ -5,7 +5,6 @@
     align-items: center;
     margin-left: 30px;
 }
-
 .imageComponent {
     width: 600px;
     height: 600px;
@@ -22,7 +21,6 @@
     gap: 20px;
     justify-content: center;
     width: 1400px;
-    height: 1100px;
 }
 
 .fourContainer{
@@ -32,23 +30,60 @@
 
 .topNavigationBar{
     width: inherit;
-    height: 67px;
     display: flex;
     font-size: 22px;
     font-weight: 500;
     justify-content: space-around;
     align-items: end;
-    margin-top: 106px;
-    margin-bottom: 50px;
-
+    margin-top: 123px;
+    margin-bottom: 25px;
 }
 .navigationOption{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+.navigationOption_borderLine{
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    border-bottom: 4px solid black;
+    border-radius: 2px;
+}
+.navigationOption:hover{
+    cursor: pointer;
+}
 .borderLine{
     width: inherit;
    border: 1px solid lightgrey;
    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .superContainer{
+        width: 100vw;
+    }
+    .navigationOption{
+        gap: 8px;
+    }
+    .topNavigationBar{
+            font-size: 11px;
+            width: 100vw;
+    }
+    .borderLine{
+        width: 100vw;
+    }
+    .imageComponent {
+        width: 130px;
+        height: 136px;
+    }
+    
+    .imageComponent2 {
+        width: 130px;
+        height: 136px;
+    }
+    .mainContainer {
+        width: 100vw;
+        height: 100%;
+    }
 }

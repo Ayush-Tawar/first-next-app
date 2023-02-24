@@ -70,7 +70,7 @@
      .navContainer{
         width: 100vw;
         gap: 10px;
-        justify-content: space-around;
-        padding: 0px 20px;
+        justify-content: space-between;
+        padding: 0px 15px;
      }
 }

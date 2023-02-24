@@ -12,34 +12,49 @@ import GalleryImage10 from '@/assets/gallery_10.png'
 export const GalleryImage = [
     {
         image: GalleryImage1,
+        imageType:"food",
     },
     {
         image: GalleryImage2,
+        imageType:"event",
+
     },
     {
         image: GalleryImage3,
+        imageType:"event",
+
     },
     {
         image: GalleryImage4,
+        imageType:"food",
     
     },
     {
         image:GalleryImage5,
+        imageType:"venue",
     },
     {
         image:GalleryImage6,
+        imageType:"venue",
     },
     {
         image:GalleryImage7,
+        imageType:"food",
+
     },
     {
         image:GalleryImage8,
+        imageType:"venue",
     },
     {
         image:GalleryImage9,
+        imageType:"food",
+
     },
     {
         image:GalleryImage10,
+        imageType:"event",
+
     },
 
 ]
